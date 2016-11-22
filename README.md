@@ -4,8 +4,8 @@ _So you want to use project gutenberg text?_
 
 This package doesn't currently work (install problems with the BSD database that
 happens even on python2) and doesn't provide the functionality I wanted. I used
-it to clean up the headers from Gutenberg files I scraped using some bash
-commands.
+code from this repo to clean up the headers from Gutenberg files (step 2) I
+scraped using some bash commands (step 1).
 
 ## step 1: scrape
 
@@ -72,7 +72,7 @@ ls | grep -v "\.txt" | xargs rm -rf
 
 ## step 2: clean using this repo
 
-I'm using gutenberg/cleanup/strip_headers.py to take off the inconsistent
+I'm using `gutenberg/cleanup/strip_headers.py` to take off the inconsistent
 mountain of crap above and below the texts.
 
 ```bash
@@ -84,7 +84,7 @@ source venv/bin/activate
 pip3 install six
 pip3 install tqdm
 
-# run. <indir> contains all of your downloaded .txt files. Outdir is where the
+# run. <indir> contains all of your downloaded .txt files. <outdir> is where the
 # script dumps the (relatively) cleaned versions.
 python3 clean.py <indir> <outdir>
 
