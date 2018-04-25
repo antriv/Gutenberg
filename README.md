@@ -54,7 +54,8 @@ rm 18251-mac.zip
 # 5. unzip all of the files and remove all of the zips.
 sudo apt install unzip
 unzip "*.zip"
-rm "*.zip"
+#rm "*.zip"
+find . -name '*.zip' -delete
 
 # 6. From foo.zip, some files extract directly into foo.txt, while other extract
 #    into foo/foo.txt. Move all into this directory.
