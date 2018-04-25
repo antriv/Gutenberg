@@ -22,8 +22,10 @@ rm harvest*
 #    random samplings it seemed like there were ASCII versions of all of these.
 #    (NOTE: after trying to process the remainders, it seems like many aren't
 #    actually ASCII after all. Oh well.)
-ls | grep "-8.zip" | xargs rm
-ls | grep "-0.zip" | xargs rm
+#ls | grep "-8.zip" | xargs rm
+#ls | grep "-0.zip" | xargs rm
+find . -name '*-8.zip' -delete
+find . -name '*-0.zip' -delete
 
 # 4. We were then left with a handful of other files with '-' characters in them
 #    (which seemed to be an indication of non-standard formatting).
