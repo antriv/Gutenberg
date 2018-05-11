@@ -1,5 +1,7 @@
 # gutenberg
 
+# For Gutenberg Metadata: https://github.com/c-w/gutenberg
+
 _So you want to use project gutenberg text?_
 
 This package doesn't currently work (install problems with the BSD database that
